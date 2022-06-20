@@ -57,7 +57,7 @@ function Register() {
     Usuarios.push(data);
     // console.log(Usuarios);
 
-    history.push(`/login/:{data.id}`);
+    history.push(`/login/${data.id}`);
   };
 
   return (

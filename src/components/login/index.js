@@ -5,19 +5,19 @@ import { Usuarios } from "../Usuarios";
 function Logado() {
   const { id } = useParams();
 
-  // console.log(id + "id que aparece dentro do useParams");
+  console.log(id + "id que aparece dentro do useParams");
 
   // console.log(useParams + "a function useParams");
 
   console.log(Usuarios);
 
-  const chave = localStorage.getItem("token");
+  // const chave = localStorage.getItem("token");
 
-  const userId = parseInt(chave);
+  // const userId = parseInt(chave);
 
-  console.log(userId);
+  // console.log(userId);
 
-  const user = Usuarios.find((user) => user.id === userId);
+  const user = Usuarios.find((user) => user.id == id);
 
   // console.log(Usuarios[0].id);
 
