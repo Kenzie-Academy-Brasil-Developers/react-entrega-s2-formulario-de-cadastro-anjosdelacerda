@@ -5,6 +5,8 @@ import { Usuarios } from "../Usuarios";
 function Logado() {
   const { id } = useParams();
 
+  const userId = parseInt(id);
+
   console.log(id + "id que aparece dentro do useParams");
 
   // console.log(useParams + "a function useParams");
@@ -17,7 +19,7 @@ function Logado() {
 
   // console.log(userId);
 
-  const user = Usuarios.find((user) => user.id == id);
+  const user = Usuarios.find((user) => user.id === userId);
 
   // console.log(Usuarios[0].id);
 
